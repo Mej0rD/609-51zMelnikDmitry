@@ -61,45 +61,103 @@ font-weight: 400;
 .header__toggle {
     display: none;
   }
+.hero {
+  background-color: #F5F7FA;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.hero__title {
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero__accent {
+  display: block;
+  color: #4CAF4F;
+}
+
+.hero__content {
+  max-width: 657px;
+
+}
+.hero__image {
+  width: 391px;
+  height: auto;
+}
+
+.hero__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #717171;
+  margin: 16px 0 32px;
+
+}
+.hero__link {
+  display: inline-block;
+  background-color: #4CAF4F;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 14px 32px;
+
+}
+
+
+
+
+
+
+
 
 @media (max-width: 992px) {
-  .header__nav,
-  .header__actions {
-    display: none;
-  }
+          .header__nav,
+          .header__actions {
+            display: none;
+          }
 
-  .header__toggle {
-    display: block;
-  }
+          .header__toggle {
+            display: block;
+          }
 
-  .header__inner.header__inner--menu-open .header__nav,
-  .header__inner.header__inner--menu-open .header__actions {
-    display: flex;
-    flex-direction: column;
-  }
-  .header__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-}
+          .header__inner.header__inner--menu-open .header__nav,
+          .header__inner.header__inner--menu-open .header__actions {
+            display: flex;
+            flex-direction: column;
+          }
+          .header__inner {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+        }
 
-.header__toggle {
-  justify-self: end;
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
+        .header__toggle {
+          justify-self: end;
+          background: none;
+          border: 0;
+          cursor: pointer;
+        }
 
-.header__nav,
-.header__actions {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-block-start: 24px;
-}
+        .header__nav,
+        .header__actions {
+          grid-column: 1 / -1;
+          text-align: center;
+          margin-block-start: 24px;
+        }
 
-.header__nav {
-  gap: 24px;
-}
-.header__link {
-  padding-block: 16px;
-}
-}
+        .header__nav {
+          gap: 24px;
+        }
+        .header__link {
+          padding-block: 16px;
+        }
+        }
+
