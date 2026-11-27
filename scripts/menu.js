@@ -4,6 +4,7 @@ const menuIcon = menuButton.querySelector("img");
 
 menuButton.addEventListener("click", () => {
     const isOpen = header.classList.toggle("header__inner--menu-open");
+    menuButton.closest(".header").classList.toggle("header--menu-open", isOpen);
 
     menuButton.setAttribute("aria-expanded", String(isOpen));
     menuButton.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
